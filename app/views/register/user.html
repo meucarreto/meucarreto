@@ -1,0 +1,37 @@
+<form name="registerForm" class="register">
+	<h3>Informações básicas</h3>
+	<div class="col-sm-12 col-lg-6">
+		<div class="form-group-carreto">
+			<label for="name" class="control-label">Nome da empresa ou pessoa física:</label>
+			<input name="name" type="text" class="form-control" ng-model="register.registrationData.name" placeholder="Digite seu nome" ng-required="true">
+			
+			<label for="login" class="control-label">Login:</label>
+			<input name="login" type="text" class="form-control" ng-model="register.registrationData.login" placeholder="Digite seu login" ng-required="true">
+
+			<label for="phone" class="control-label">Telefone:</label>
+			<input name="phone" type="text" class="form-control" ng-model="register.registrationData.phone" placeholder="(XX) XXXXX-XXXX" ui-br-phone-number ng-required="true">
+		</div>
+	</div>
+	<div class="col-sm-12 col-lg-6" >
+		<div class="form-group-carreto">
+			<label for="email" class="control-label">E-mail:</label>
+			<input name="email" type="email" class="form-control" ng-model="register.registrationData.email" placeholder="seuemail@seumail.com" ng-required="true">
+			
+			<label for="password" class="control-label">Senha:</label>
+			<input name="password" type="password" class="form-control" ng-model="register.registrationData.password" placeholder="Senha" ng-required="true">
+
+			<label for="confirm-password" class="control-label">Confirmar senha:</label>
+			<input name="confirmPassword" type="password" class="form-control" ng-model="register.registrationData.confirmPassword" placeholder="Confirmar senha" ng-required="true">
+		</div>
+	</div>
+	<div class="col-sm-12 col-lg-12 alert alert-danger alert-dismissible" role="alert" ng-show="register.showErrorMessage">
+			<span class="ng-binding ng-scope">{{register.errorMessage}}</span>
+	</div>
+
+	<div class="col-sm-12 col-lg-6 register-btn" ng-if="register.isUser || register.isTransporter">
+		<button type="button" class="btn btn-success btn-search" ng-click="register.finish(registerForm)">Finalizar</button>
+	</div>
+	<div class="col-sm-12 col-lg-6 register-btn" ng-if="register.isUser || register.isTransporter">
+		<button type="button" class="btn btn-success btn-search" ng-click="register.back()">Voltar</button>
+	</div>
+</form>

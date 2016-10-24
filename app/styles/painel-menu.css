@@ -1,0 +1,39 @@
+.painel-menu {
+	background-color: #fff;
+    padding: 0px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 0;	
+
+}
+
+.painel-menu h2 {
+	background: #1298d5;
+    border-top: 1px solid #17b6e1;
+    border-bottom: 4px solid #0086c3;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.painel-menu .painel-menu-item {
+	display: block;
+    padding: 15px;
+    font-size: 17px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    font-weight: 700;
+}
+
+.painel-menu .painel-menu-item:hover {
+	background-color: #F5F4F4;
+	border-left: solid;
+    border-left-color: #1298d5;
+    border-left-width: 5px;
+    text-decoration: none;
+
+}
+
+a:visited, a:active, a:link, a:hover {
+	text-decoration: none;
+
+}

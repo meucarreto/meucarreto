@@ -1,0 +1,10 @@
+<div ng-controller="LoginCtrl as painel" class="col-sm-12 col-xs-12 col-md-12 col-xs-12 painel-menu">
+
+	<h2>Painel</h2>
+	<p hidden ng-bind="painel.updateUserInfo()"></p>
+	<a href="#/painel/edit" class="painel-menu-item">Meus dados</a>
+	<a href="#/painel/logotipo" ng-if="painel.registrationData.isTransporter" class="painel-menu-item">Logotipo</a>
+	<a href="#/painel/edit" ng-click="painel.logout()" class="painel-menu-item">Sair</a>
+
+
+</div>

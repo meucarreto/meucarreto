@@ -1,0 +1,25 @@
+<div class="login">
+    <div class="text-divider">
+        <h2>SEJA BEM VINDO !</h2>
+        <h2>No caso de dúvidas ou sugestões, entre em contato com o MeuCarreto.</h2>
+    </div>
+    <div class="col-sm-12 col-lg-12 alert alert-danger alert-dismissible" role="alert" ng-show="login.error">
+        <span class="ng-binding ng-scope">Login ou senha não conferem! Por favor, tente novamente.</span>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+        <div class="form-group-carreto">
+            <label for="login" class="control-label">Login:</label>
+            <input type="text" class="form-control" ng-model="user.username" placeholder="Digite seu login">
+            
+            <label for="password" class="control-label">Senha:</label>
+            <input type="password" class="form-control" ng-model="user.password" placeholder="Digite sua senha">
+        </div>
+        <button type="button" ng-click="login.makeLogin(user)" class="btn btn-success btn-search">Entrar</button>
+    </div>
+    <div class="col-sm-12 col-lg-8">
+        <h3>Você ainda não possui uma conta?</h3>
+        <p>Para acessar todas as funcionalidades do MeuCarreto, você precisa criar uma conta.</p>
+        <p>Utilize o link abaixo para criar sua conta e aproveitar todas as oportunidades do Meu Carreto.</p>
+        <a href="#/cadastrar">Criar conta</a>
+    </div>
+</div>

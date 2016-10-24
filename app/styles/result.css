@@ -1,0 +1,30 @@
+.card-carreto {
+	background-color: #FFF;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 3px solid #1298d5;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.card-carreto i {
+	font-size: 35px;
+    color: #1298d5;
+    float: left;
+}
+
+.card-carreto span {
+	font-size: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.card-carreto .card-text {
+	margin-top: 15px;
+}
+
+.card-carreto .card-name p{
+	font-weight: 900;
+	color: #1298d5;
+	font-size: 18px;
+}

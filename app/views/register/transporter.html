@@ -1,0 +1,75 @@
+<form name="registerForm" class="register">
+	<div class="col-sm-12 col-lg-6">
+		<div class="form-group-carreto">
+			<label for="name" class="control-label">Nome da empresa ou pessoa física:</label>
+			<input name="name" type="text" class="form-control" ng-model="register.registrationData.name" placeholder="Digite seu nome" ng-required="true">
+			
+			<label for="login" class="control-label">Login:</label>
+			<input name="login" type="text" class="form-control" ng-model="register.registrationData.login" placeholder="Digite seu login" ng-required="true">
+
+			<label for="phone" class="control-label">Telefone:</label>
+			<input name="phone" type="text" class="form-control" ng-model="register.registrationData.phone" placeholder="(XX) XXXXX-XXXX" ui-br-phone-number ng-required="true">
+		</div>
+	</div>
+	<div class="col-sm-12 col-lg-6" >
+		<div class="form-group-carreto">
+			<label for="email" class="control-label">E-mail:</label>
+			<input name="email" type="email" class="form-control" ng-model="register.registrationData.email" placeholder="seuemail@seumail.com" ng-required="true">
+			
+			<label for="password" class="control-label">Senha:</label>
+			<input name="password" type="password" class="form-control" ng-model="register.registrationData.password" placeholder="Senha" ng-required="true">
+
+			<label for="confirm-password" class="control-label">Confirmar senha:</label>
+			<input name="confirmPassword" type="password" class="form-control" ng-model="register.registrationData.confirmPassword" placeholder="Confirmar senha" ng-required="true">
+		</div>
+	</div>
+
+	<h3>Informações do transporte</h3>
+	<div class="col-sm-12 col-lg-6">
+		<div class="form-group-carreto">
+			<label for="model" class="control-label">Qual o tipo de carga: </label>
+			<multiselect ng-model="register.registrationData.models" ng-required="true" options="model for model in register.transporterInfo.model | orderBy:'-model'" data-multiple="true"></multiselect>
+			<label for="days" class="control-label">Quais os dias disponíveis para realizar a coleta / entrega:</label>
+			<multiselect ng-model="register.registrationData.days" ng-required="true" options="days for days in register.transporterInfo.days | orderBy:'-days' " data-multiple="true"></multiselect>
+
+			<label for="model" class="control-label">Região de coleta?</label>
+			<multiselect ng-model="register.zoneSelected" ng-required="true" options="model.name for model in register.zone | orderBy:'+name'" data-multiple="true"></multiselect>
+
+			<label for="typeTruck" class="control-label">Gera NF?</label>
+			<select class="field-carreto" ng-model="register.registrationData.nf">
+				<option value="false" selected="selected">Não</option>
+			 	<option value="true">Sim</option>
+			</select>
+		</div>
+
+	</div>
+	<div class="col-sm-12 col-lg-6">
+		<div class="form-group-carreto">
+			<label for="schedules" class="control-label">Qual o horário de coleta / entrega ?</label>
+			<multiselect ng-model="register.registrationData.schedules" ng-required="true" options="schedules for schedules in register.transporterInfo.schedules | orderBy:'-schedules'" data-multiple="true"></multiselect>
+
+			<label for="typeTruck" class="control-label">Qual o tipo / Modelo do veículo?</label>
+			<multiselect ng-model="register.registrationData.typeTruck" ng-required="true" options="typeTruck for typeTruck in register.transporterInfo.typeTruck | orderBy:'-typeTruck'" data-multiple="true"></multiselect>
+
+			<label for="typeTruck" class="control-label">Possui seguro?</label>
+			<select class="field-carreto" ng-model="register.registrationData.security">
+				<option value="false" selected="true">Não</option>
+			 	<option value="true">Sim</option>
+			</select>
+
+		</div>
+	</div>
+	</div>
+	<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+		<div class="col-sm-12 col-lg-12 alert alert-danger alert-dismissible" role="alert" ng-show="register.showErrorMessage">
+				<span class="ng-binding ng-scope">{{register.errorMessage}}</span>
+		</div>
+		
+		<div class="col-sm-12 col-lg-6 register-btn" ng-if="register.isUser || register.isTransporter">
+			<button type="button" class="btn btn-success btn-search" ng-click="register.finish(registerForm)">Finalizar</button>
+		</div>
+		<div class="col-sm-12 col-lg-6 register-btn" ng-if="register.isUser || register.isTransporter">
+			<button type="button" class="btn btn-success btn-search" ng-click="register.back()">Voltar</button>
+		</div>
+	</div>
+</form>

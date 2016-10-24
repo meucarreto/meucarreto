@@ -1,0 +1,10 @@
+<div class="text-divider">
+    <h2>SEJA BEM VINDO !</h2>
+    <h2>Bem vindo {{register.getUsername()}} ao painel Meu Carreto</h2>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-xs-12 row">
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" ng-include="'views/painel/menu.html'"></div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" ng-if="register.registrationData.isTransporter" ng-include="'views/register/transporter.html'"></div>
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" ng-if="register.registrationData.isUser" ng-include="'views/register/user.html'"></div>
+</div>

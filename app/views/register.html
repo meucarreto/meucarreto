@@ -1,0 +1,20 @@
+	<div class="text-divider">
+	 	<h2>OLÁ, SEJA BEM VINDO!</h2>
+	 	<h2>Cadastre seu transporte e faça parte dessa comunidade !</h2>
+	</div>
+<div class="pre-register col-sm-12 col-lg-12" ng-show="register.showPreRegister">
+	<h2>Você ainda não tem uma conta?</h2>
+	<button type="button" class="btn btn-success btn-search" ng-click="register.registerSession('transporter')">Sou Transportador</button>
+	<button type="button" class="btn btn-success btn-search" ng-click="register.registerSession('user')">Sou Usuário</button>
+</div>
+
+<div class="col-sm-12 col-lg-12 alert alert-success alert-dismissible" role="alert" ng-show="register.registerWithSuccess">
+	<span class="ng-binding ng-scope">Cadastrado com sucesso !</span>
+</div>
+
+<div class="col-sm-12 col-lg-12 alert alert-danger alert-dismissible" role="alert" ng-show="register.showErrorMessage">
+		<span class="ng-binding ng-scope">{{register.errorMessage}}</span>
+</div>
+
+<div ng-if="register.isUser" ng-include="'views/register/user.html'" ></div>
+<div ng-if="register.isTransporter" ng-include="'views/register/transporter.html'"></div>

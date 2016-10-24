@@ -1,0 +1,40 @@
+<div>
+	<div class="card-carreto col-sm-12 col-md-12 col-lg-12" ng-repeat="carreto in search.carretos track by $index">
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2">
+				<img alt="Meu Carreto" ng-src="images/meu-carreto-icone.png"></img>
+			</div>		
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+				<div class="card-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p>{{carreto.name}}</p>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<i class="fa fa-phone"></i> 
+					<span>{{carreto.phone}}</span>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<i class="fa fa-envelope"></i>
+					<span>{{carreto.email}}</span>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<span>Emite nota? {{carreto.nf ? "Sim": "Não"}}</span>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<span>Possui seguro? {{carreto.security ? "Sim": "Não"}}</span>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<span>Horário de entrega: {{search.getSchedules(carreto.schedules)}}</span>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<span>Tipos de carga: {{search.getTypeTrucks(carreto.typeTruck)}}</span>
+				</div>
+				<div class="card-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<span>Tipos de carreto: {{search.getTypeTrucks(carreto.models)}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-carreto col-sm-12 col-md-12 col-lg-12 " style="text-align:center" ng-if="search.carretos.length == 0">
+		Não há carretos cadastrados para essa pesquisa, por favor tente novamente com outros valores.
+	</div>
+</div>

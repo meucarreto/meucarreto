@@ -1,0 +1,182 @@
+POST -> /transporterInfo
+
+{
+	"model" : [
+		"Documentos",
+		"Mudanças",
+		"Outros",
+		"Alimentos",
+		"Animais",
+		"Cargas aquecidas",
+		"Líquidas à granel",
+		"Cargas perigosas",
+		"Cargas sólidas à granel",
+		"Engradados ( líquidos engarrafados )",
+		"Flores",
+		"Gado em pé",
+		"Lixo",
+		"Produtos inflamáveis à granel",
+		"Produtos perecíveis com temperatura controlada",
+		"Produtos químicos agressivos à granel ( líquidos e gasosos )",
+		"Remédios / produtos controlados",
+		"Sucata",
+		"Veículos"
+	],
+	"typeTruck": [
+		"Caminhão 3/4 (caminhão pequeno de caçamba fechada)",
+		"Carreta",
+		"Carreta 2 eixos",
+		"Carreta 3 eixos",
+		"Carreta cavalo trucado",
+		"Cavalo mecânico / Caminhão extra pesado", 
+		"Cavalo mecânico trucado / LS",
+		"Fiorino",
+		"Kombi",
+		"Kombi Aberta(Carroceria)",
+		"Toco ou Caminhão semi pesado",
+		"Truck/Caminhão pesado",
+		"Veículo Urbano de Carga - V.U.C"
+	],
+	"days": ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabádo", "Domingo"],
+	"schedules": ["6 - 12", "12 - 18", "18 - 24", "24 - 6"]
+}
+
+
+
+POST -> /state
+{
+	"name" : "São Paulo",
+	"cigla": "SP",
+	"cities" : [
+		{"name": "SP Centro", "cepInicial": "01000", "cepFinal": "01599"},
+		{"name": "SP Zona Norte", "cepInicial": "02000", "cepFinal": "02999"},
+		{"name": "SP Zona Leste", "cepInicial": "03000", "cepFinal": "08499"},
+		{"name": "SP Zona Sul", "cepInicial": "04000", "cepFinal": "04999"},
+		{"name": "SP Zona Oeste", "cepInicial": "05000", "cepFinal": "05899"},
+		{"name": "Grande São Paulo", "cepInicial": "06000", "cepFinal": "09999"},
+		{"name": "SP Litoral", "cepInicial": "11000", "cepFinal": "11999"},
+		{"name": "SP Centro", "cepInicial": "01000", "cepFinal": "01599"},
+		{"name": "SP Centro", "cepInicial": "01000", "cepFinal": "01599"},
+		{"name": "SP Centro", "cepInicial": "01000", "cepFinal": "01599"}
+	],
+	"espectro": {"inicio": "01000", "fim": "19999"}
+}
+
+{
+	"name" : "Rio de Janeiro",
+	"cigla": "RJ",
+	"cities" : [
+		{"name": "RJ Capital", "cepInicial": "20000", "cepFinal": "23799"},
+		{"name": "RJ Área Metropolitana", "cepInicial": "20000", "cepFinal": "26600"},
+		{"name": "RJ Interior", "cepInicial": "26601", "cepFinal": "28999"}
+	],
+	"espectro": {"inicio": "20000", "fim": "28999"}
+}
+{
+	"name" : "Espirito Santo",
+	"cigla": "ES",
+	"cities" : [
+		{"name": "Vitória", "cepInicial": "29000", "cepFinal": "29099"},
+		{"name": "ES Interior", "cepInicial": "29100", "cepFinal": "29999"}
+	],
+	"espectro": {"inicio": "29000", "fim": "29999"}
+}
+
+{
+	"name" : "Minas Gerais",
+	"cigla": "MG",
+	"cities" : [
+		{"name": "Belo Horizonte", "cepInicial": "30000", "cepFinal": "31999"},
+		{"name": "MG Região Metropolitana Belo Horizonte", "cepInicial": "30000", "cepFinal": "34999"},
+		{"name": "MG Interior", "cepInicial": "35000", "cepFinal": "39999"}
+	],
+	"espectro": {"inicio": 30000, "fim": "39999"}
+}
+
+
+POST -> /zone
+
+{"name": "SP Centro", "cepInicial": "01000", "cepFinal": "01599"}
+
+{"name": "SP Zona Norte", "cepInicial": "02000", "cepFinal": "02999"}
+
+{"name": "SP Zona Leste", "cepInicial": "03000", "cepFinal": "08499"}
+
+{"name": "SP Zona Sul", "cepInicial": "04000", "cepFinal": "04999"}
+
+{"name": "SP Zona Oeste", "cepInicial": "05000", "cepFinal": "05899"}
+
+{"name": "SP Grande São Paulo", "cepInicial": "06000", "cepFinal": "09999"}
+
+{"name": "SP Litoral", "cepInicial": "11000", "cepFinal": "11999"}
+
+{"name": "RJ Capital", "cepInicial": "20000", "cepFinal": "23799"}
+
+{"name": "RJ Área Metropolitana", "cepInicial": "20000", "cepFinal": "26600"}
+
+{"name": "RJ Interior", "cepInicial": "26601", "cepFinal": "28999"}
+
+{"name": "ES Vitória", "cepInicial": "29000", "cepFinal": "29099"}
+
+{"name": "ES Interior", "cepInicial": "29100", "cepFinal": "29999"}
+
+{"name": "MG Belo Horizonte", "cepInicial": "30000", "cepFinal": "31999"}
+
+{"name": "MG Região Metropolitana Belo Horizonte", "cepInicial": "30000", "cepFinal": "34999"}
+
+{"name": "MG Interior", "cepInicial": "35000", "cepFinal": "39999"}
+{"name": "BA Salvador", "cepInicial": "40000", "cepFinal": "41999"}
+{"name": "BA Região Metropolitana Salvador", "cepInicial": "40000", "cepFinal": "44470"}
+{"name": "BA Interior", "cepInicial": "44470", "cepFinal": "48999"}
+{"name": "SE Aracaju", "cepInicial": "49000", "cepFinal": "49099"}
+{"name": "SE Interior", "cepInicial": "49100 ", "cepFinal": "49999"}
+{"name": "PE Recife", "cepInicial": "50000", "cepFinal": "52999"}
+{"name": "PE Região Metropolitana Recife", "cepInicial": "50000", "cepFinal": "54999"}
+{"name": "PE Interior", "cepInicial": "55000", "cepFinal": "56999"}
+{"name": "AL Maceió", "cepInicial": "57000", "cepFinal": "57099"}
+{"name": "AL Interior", "cepInicial": "57100", "cepFinal": "57999"}
+{"name": "PB João Pessoa", "cepInicial": "58000", "cepFinal": "58099"}
+{"name": "PB Interior", "cepInicial": "58100", "cepFinal": "58999"}
+{"name": "RN Natal", "cepInicial": "59000", "cepFinal": "59099"}
+{"name": "RN Interior", "cepInicial": "59100", "cepFinal": "59999"}
+{"name": "CE Fortaleza", "cepInicial": "60000", "cepFinal": "60999"}
+{"name": "CE Área Metropolitana Fortaleza", "cepInicial": "60000", "cepFinal": "61999"}
+{"name": "CE Interior", "cepInicial": "61901", "cepFinal": "63999"}
+{"name": "PI Teresina", "cepInicial": "64000", "cepFinal": "64099"}
+{"name": "PI Interior", "cepInicial": "64100", "cepFinal": "64999"}
+{"name": "MA São Luiz", "cepInicial": "65000", "cepFinal": "65099"}
+{"name": "MA Interior", "cepInicial": "65100", "cepFinal": "65999"}
+{"name": "PA Belém", "cepInicial": "66000", "cepFinal": "66999"}
+{"name": "PA Região Metropolitana Belém", "cepInicial": "66000", "cepFinal": "67999"}
+{"name": "PA Interior", "cepInicial": "68000", "cepFinal": "68899"}
+{"name": "AP Macapá", "cepInicial": "68900", "cepFinal": "68914"}
+{"name": "AP Interior", "cepInicial": "68915", "cepFinal": "68999"}
+{"name": "AM Manaus", "cepInicial": "69000", "cepFinal": "69099"}
+{"name": "AM Interior", "cepInicial": "69100", "cepFinal": "69299"}
+{"name": "RR Boa Vista", "cepInicial": "69300", "cepFinal": "69339"}
+{"name": "RR Interior", "cepInicial": "69340", "cepFinal": "69389"}
+{"name": "AC Rio Branco", "cepInicial": "69900", "cepFinal": "69920"}
+{"name": "AC Interior", "cepInicial": "69921", "cepFinal": "69999"}
+{"name": "DF Brasília", "cepInicial": "70000", "cepFinal": "70999"}
+{"name": "DF Cidades Satélite", "cepInicial": "71000", "cepFinal": "73699"}
+{"name": "GO Goiânia", "cepInicial": "72800", "cepFinal": "73999"}
+{"name": "GO Goiânia Área Metropolitana", "cepInicial": "74000", "cepFinal": "74894"}
+{"name": "GO Interior", "cepInicial": "74895", "cepFinal": "76799"}
+{"name": "TO Palmas", "cepInicial": "77000", "cepFinal": "77270"}
+{"name": "TO Interior", "cepInicial": "77300", "cepFinal": "77995"}
+{"name": "MT Cuiabá", "cepInicial": "78000", "cepFinal": "78109"}
+{"name": "MT Interior", "cepInicial": "78110", "cepFinal": "78899"}
+{"name": "RO Porto Velho", "cepInicial": "78900", "cepFinal": "78930"}
+{"name": "RO Interior", "cepInicial": "	78931", "cepFinal": "78999"}
+{"name": "MS Campo Grande", "cepInicial": "79000", "cepFinal": "79129"}
+{"name": "MS Interior", "cepInicial": "79130", "cepFinal": "79999"}
+{"name": "PR Curitiba", "cepInicial": "80000", "cepFinal": "82999"}
+{"name": "PR Área Metropolitana Curitiba", "cepInicial": "80000", "cepFinal": "83800"}
+{"name": "PR Interior", "cepInicial": "83801", "cepFinal": "87999"}
+{"name": "SC Florianópolis", "cepInicial": "88000", "cepFinal": "82999"}
+{"name": "SC Área Metropolitana Florianópolis", "cepInicial": "88000", "cepFinal": "88469"}
+{"name": "SC Interior", "cepInicial": "88470", "cepFinal": "89999"}
+{"name": "RS Porto Alegre", "cepInicial": "90000", "cepFinal": "91999"}
+{"name": "RS Área Metropolitana Porto Alegre", "cepInicial": "90000", "cepFinal": "94900"}
+{"name": "RS Interior", "cepInicial": "94901", "cepFinal": "99999"}
+

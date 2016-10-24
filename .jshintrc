@@ -1,0 +1,19 @@
+{
+  "bitwise": true,
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "esnext": true,
+  "latedef": true,
+  "noarg": true,
+  "indent": 4,
+  "node": true,
+  "latedef": "nofunc",
+  "strict": true,
+  "undef": true,
+  "unused": true,
+  "validthis" :true,
+  "globals": {
+    "angular": false
+  }
+}

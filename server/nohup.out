@@ -1,0 +1,127 @@
+Express server listening on port 3000
+[0mGET / [33m404 [0m3.350 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
+[0mGET /favicon.ico [33m404 [0m1.459 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
+[0mGET / [33m404 [0m0.501 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
+[0mGET /favicon.ico [33m404 [0m0.522 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
+[0mGET / [33m404 [0m0.441 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
+[0mGET / [33m404 [0m1.251 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
+[0mGET /favicon.ico [33m404 [0m0.834 ms - 1766[0m
+Error: Not Found
+    at /home/ubuntu/meucarreto/server/server.js:34:13
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:618:15
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:256:14)
+    at Function.handle (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:176:3)
+    at router (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/index.js:271:10)
+    at next (/home/ubuntu/meucarreto/server/node_modules/express/lib/router/route.js:121:14)
